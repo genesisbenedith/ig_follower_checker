@@ -1,17 +1,17 @@
 # ig_follower_checker
-This is a Python script that checks which Instagram accounts are not following you back. 
+This is a collection of scripts, one in JavaScript and another in Python, that checks which Instagram accounts are not following you back. 
 
 # Features
 
 - Easily identify who is not following you back on Instagram.
-- Simple and flexible command-line interface using JSON input and CSV output.
+- Simple and flexible command-line interface using JSON input and CSV or TXT output.
 - Easy installation and setup with detailed instructions.
-- Works on any platform with Python 3 and a web browser.
+- Works on any platform with Python 3 or Node.js and a web browser.
 - No need to provide your Instagram login information or use a third-party service.
-- Export your results to a CSV file and analyze them in your favorite spreadsheet software.
+- Export your results to a CSV file or a TXT file and analyze them easily.
 
-# Installation
-To use this script, you need to have Python 3 installed on your computer.
+# Installation 
+To use this script, you need to have Python 3 or Node.js installed on your computer.
 
 # Steps
 The script requires two JSON files: one with your list of followers and another with the list of accounts you are following. You can download these files from Instagram by following the steps below:
@@ -37,13 +37,24 @@ cd ~/Downloads/
 
 12. Once you are in the correct directory, run the script by entering the following command in your terminal:
 
+For Python:
 ```
 python instagram_unfollower_checker.py --followers followers_1.json --following following.json --output not_following_back.csv
 ```
 
+The Python script will run and generate a CSV file named "not_following_back.csv" in the same directory. You can open this file in a spreadsheet program like Microsoft Excel to view the results.
+
+
+For JavaScript:
+```
+node follower_checker.js 
+```
+
+The JavaScript file will run and generate a TXT file named "users_not_following_back.txt" in the same directory. You can open this file in a text editor to view the results.
+
+
 Note that you may need to modify the file names in the above command to match the actual names of the JSON files that you downloaded.
 
-The script will run and generate a CSV file named "not_following_back.csv" in the same directory. You can open this file in a spreadsheet program like Microsoft Excel to view the results.
 
 # License
 This script is licensed under the GPL v3.0 License. See the LICENSE file for more information.
